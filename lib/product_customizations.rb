@@ -21,7 +21,7 @@ module ProductCustomizations
           cpo.value = user_input
         else
           cpo.value = "" # TODO revisit. What should be here
-          cpo.customization_image = user_input["customization_image"]
+          cpo.customization_image_data_uri = user_input["customization_image_data_uri"]
         end
         # attach to its customization
         pc.customized_product_options << cpo
